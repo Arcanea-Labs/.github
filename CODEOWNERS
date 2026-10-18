@@ -1,0 +1,14 @@
+# Arcanea Labs (Arcanea-Labs) — Organization Default CODEOWNERS
+# Website: https://arcanea.ai
+# Brand ID: arcanea | Governance Mode: active
+# Steward Agent: steward-arcanea
+# Executive Seat: CCO (Creative & Canon)
+# Universal IS: Creator IS,Brand IS,Voice & Video IS
+# Council Lead: starlight-weaver,starlight-visionary,luminor-council
+# Primary Harnesses: Antigravity, Claude Code, Codex, Grok
+#
+# Human approval gate (Maker != Checker invariant):
+* @frankxai
+/.github/ @frankxai
+/AGENTS.md @frankxai
+/SECURITY.md @frankxai
