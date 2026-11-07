@@ -1,57 +1,52 @@
-# Arcanea Labs
+![Arcanea Labs](https://raw.githubusercontent.com/Arcanea-Labs/.github/main/assets/org-banner.png)
 
 Creative worldbuilding platform, character and story studio, and open agent extensions.
 
-**Website:** [arcanea.ai](https://arcanea.ai) Â· **Ecosystem:** [Starlight Intelligence](https://github.com/Starlight-Intelligence) Â· [Starlight Systems](https://github.com/Starlight-Intelligence-Systems) Â· [Arcanea Labs](https://github.com/Arcanea-Labs) Â· [GenCreator](https://github.com/GenCreator-ai) Â· [FrankX](https://github.com/FrankX-AI)
+Arcanea is a canon-locked creative universe plus the software that produces it: a world graph that keeps
+characters and places consistent, a studio that renders scenes from that graph, an orchestrator that runs
+the creative agents, and skill packs that check generated work against canon before anyone publishes it.
+
+**Website** [arcanea.ai](https://www.arcanea.ai) · **Sister orgs** [Starlight Intelligence](https://github.com/Starlight-Intelligence) · [Starlight Systems](https://github.com/Starlight-Intelligence-Systems) · [GenCreator](https://github.com/GenCreator-ai) · [FrankX](https://github.com/FrankX-AI)
 
 ---
 
-## Overview
+## Repositories
 
-Arcanea Labs builds open creative intelligence infrastructure: persistent world graphs, canon-verified narrative systems, generative media studios, and multi-agent orchestrators for authors and worldbuilders.
+| Repository | What it does |
+| :--- | :--- |
+| [**Arcanea**](https://github.com/Arcanea-Labs/Arcanea) | Core creative framework: the Ten Gates progression, Guardian companions, and canon-locked worldbuilding. |
+| [**arcanea-ai-app**](https://github.com/Arcanea-Labs/arcanea-ai-app) | The web application: world creation, interactive reading, and character companions. |
+| [**arcanea-studio**](https://github.com/Arcanea-Labs/arcanea-studio) | Generative media studio: image, video, lipsync, and cinematic model routing in one surface. |
+| [**arcanea-orchestrator**](https://github.com/Arcanea-Labs/arcanea-orchestrator) | Multi-agent orchestrator tuned for creative writing, lore verification, and visual production. |
+| [**arcanea-onchain**](https://github.com/Arcanea-Labs/arcanea-onchain) | Provenance and collections: artifact attestation and contract scaffolding for creative worlds. |
+| [**arcanea-ecosystem**](https://github.com/Arcanea-Labs/arcanea-ecosystem) | Architecture index and coordination across the Arcanea repositories. |
 
-## System topology
-
-```mermaid
-flowchart LR
-  ARC["Arcanea<br/>Worldbuilding framework & lore"] --> APP["arcanea-ai-app<br/>Web platform & reader"]
-  ARC --> STU["arcanea-studio<br/>Generative media studio"]
-  ARC --> ORC["arcanea-orchestrator<br/>Multi-agent creative swarm"]
-  APP --> ONC["arcanea-onchain<br/>Provenance & collection contracts"]
-  ORC --> ECO["arcanea-ecosystem<br/>Cross-repo coordination"]
-```
-
-## Flagship repositories
-
-| Repository | Purpose | Link |
-| :--- | :--- | :--- |
-| [**Arcanea**](https://github.com/Arcanea-Labs/Arcanea) | Core creative framework: Ten Gates progression, Guardian companions, and canon-locked worldbuilding. | [Website](https://arcanea.ai) |
-| [**arcanea-ai-app**](https://github.com/Arcanea-Labs/arcanea-ai-app) | Production web application for world creation, interactive reading, and character companions. | [Website](https://arcanea.ai) |
-| [**arcanea-studio**](https://github.com/Arcanea-Labs/arcanea-studio) | Provider-agnostic generative media studio for visual scenes, audio, and storyboards. | [Website](https://arcanea.ai) |
-| [**arcanea-orchestrator**](https://github.com/Arcanea-Labs/arcanea-orchestrator) | Multi-agent orchestrator tuned for creative writing, lore verification, and visual production. | [Website](https://arcanea.ai) |
-| [**arcanea-onchain**](https://github.com/Arcanea-Labs/arcanea-onchain) | On-chain provenance, artifact attestation, and collection contracts for creative worlds. | [Website](https://arcanea.ai) |
-| [**arcanea-ecosystem**](https://github.com/Arcanea-Labs/arcanea-ecosystem) | Architecture index and cross-repository coordination across the Arcanea constellation. | [Website](https://arcanea.ai) |
-
-## Quickstart
+## Start here
 
 ```bash
-# Clone the Arcanea core framework
-git clone https://github.com/Arcanea-Labs/Arcanea.git
-
-# Run the Arcanea web application locally
+# The web application (pnpm 11)
 git clone https://github.com/Arcanea-Labs/arcanea-ai-app.git
 cd arcanea-ai-app && pnpm install && pnpm dev
+
+# The substrate CLI (Starlight Intelligence System)
+npm install @arcanea/starlight-intelligence-system
 ```
 
-## Engineering standards
+## Canon discipline
 
-Every repository in **Arcanea Labs** follows the Starlight estate engineering contract:
+A creative universe only compounds if it does not contradict itself. Canon lives in the repository that
+produces it and changes by ratification, not by generation. Creative agents propose; a review step checks
+names, world law, and continuity; only then does the change land. Generated work that fails the check is
+regenerated rather than shipped.
 
-1. **Draft-first pull requests**: Open pull requests in draft mode (`gh pr create --draft`). CI workflows run only when a pull request is marked ready for review or lands on `main`.
-2. **Independent verification**: Maker harness and Checker harness must differ (`Maker-Harness` != `Checker-Harness`).
-3. **Zero committed secrets**: Credentials live in local environment files or Infisical. Pre-commit and CI gates reject secret patterns.
-4. **Editorial clarity**: Public documentation uses sentence case headings, concrete verbs, and verified metrics.
+## Rights
+
+Arcanea worlds, characters, canon, artwork, and written material are rights reserved. Public access grants
+no content, adaptation, merchandising, or model-training license. Code carries its own license where a
+`LICENSE` file states one, and third-party material keeps its original terms and attribution.
+
+See [LICENSING.md](https://github.com/Arcanea-Labs/.github/blob/main/LICENSING.md) for the full position.
 
 ---
 
-<sub>Maintained by <a href="https://github.com/frankxai">Frank Riemer (frankxai)</a> Â· Built on the <a href="https://github.com/Starlight-Intelligence-Systems/Starlight-Intelligence-System">Starlight Intelligence Protocol (SIP)</a></sub>
+<sub>Maintained by <a href="https://github.com/frankxai">Frank Riemer</a> · Built on the <a href="https://github.com/Starlight-Intelligence-Systems/Starlight-Intelligence-System">Starlight Intelligence Protocol</a></sub>
