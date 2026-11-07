@@ -1,0 +1,92 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Arcanea Labs org banner">
+  <title>Arcanea Labs</title>
+  <desc>Illuminated-plate banner with double gilt frame, armillary seal and serif wordmark on cosmic void.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0A12"/>
+      <stop offset="1" stop-color="#070709"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="640" cy="132" r="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haze" cx="640" cy="420" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AB47C7" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#AB47C7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#halo)"/>
+  <rect width="1280" height="320" fill="url(#haze)"/>
+  <rect width="1280" height="320" filter="url(#grain)" opacity="0.05"/>
+
+  <!-- faint field stars -->
+  <g fill="#F4E9CE">
+    <circle cx="90" cy="60" r="1.2" opacity="0.3"/>
+    <circle cx="150" cy="240" r="1" opacity="0.25"/>
+    <circle cx="230" cy="120" r="1.4" opacity="0.35"/>
+    <circle cx="1190" cy="80" r="1.2" opacity="0.3"/>
+    <circle cx="1140" cy="250" r="1" opacity="0.25"/>
+    <circle cx="1005" cy="55" r="1.1" opacity="0.3"/>
+    <circle cx="220" cy="268" r="1.2" opacity="0.35" fill="#00BCD4"/>
+    <circle cx="1050" cy="262" r="1.2" opacity="0.35" fill="#00BCD4"/>
+  </g>
+
+  <!-- double gilt frame -->
+  <rect x="24" y="24" width="1232" height="272" fill="none" stroke="#F59E0B" stroke-opacity="0.38" stroke-width="1"/>
+  <rect x="36" y="36" width="1208" height="248" fill="none" stroke="#F59E0B" stroke-opacity="0.16" stroke-width="1"/>
+  <g fill="#F59E0B" opacity="0.9">
+    <path d="M24,17 L31,24 L24,31 L17,24 Z"/>
+    <path d="M1256,17 L1263,24 L1256,31 L1249,24 Z"/>
+    <path d="M24,296 L31,303 L24,310 L17,303 Z"/>
+    <path d="M1256,296 L1263,303 L1256,310 L1249,303 Z"/>
+  </g>
+
+  <!-- eyebrow with flanking rules -->
+  <g stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1">
+    <line x1="470" y1="57" x2="534" y2="57"/>
+    <line x1="746" y1="57" x2="810" y2="57"/>
+  </g>
+  <text x="640" y="61" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif" font-size="13" letter-spacing="6" fill="#F59E0B">A KEPT CANON</text>
+
+  <!-- armillary seal -->
+  <g fill="none" stroke-linecap="butt">
+    <circle cx="640" cy="120" r="52" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="4" stroke-dasharray="1.2 12.41"/>
+    <circle cx="640" cy="120" r="46" stroke="#00BCD4" stroke-opacity="0.85" stroke-width="1.3"/>
+    <circle cx="640" cy="120" r="38" stroke="#AB47C7" stroke-opacity="0.75" stroke-width="1" stroke-dasharray="2 5"/>
+    <circle cx="640" cy="120" r="30" stroke="#F59E0B" stroke-opacity="0.9" stroke-width="1"/>
+    <ellipse cx="640" cy="120" rx="54" ry="15" transform="rotate(-22 640 120)" stroke="#00BCD4" stroke-opacity="0.5" stroke-width="1"/>
+  </g>
+  <circle cx="591" cy="134" r="3" fill="#00BCD4"/>
+  <circle cx="686" cy="109" r="2.2" fill="#F59E0B"/>
+  <g fill="#F59E0B" opacity="0.9">
+    <path d="M640,103 L657,120 L640,137 L623,120 Z"/>
+    <path d="M652.02,107.98 L652.02,132.02 L627.98,132.02 L627.98,107.98 Z"/>
+  </g>
+  <circle cx="640" cy="120" r="2.4" fill="#070709"/>
+  <g fill="#F59E0B" opacity="0.45">
+    <circle cx="679.6" cy="80.4" r="1"/>
+    <circle cx="679.6" cy="159.6" r="1"/>
+    <circle cx="600.4" cy="80.4" r="1"/>
+    <circle cx="600.4" cy="159.6" r="1"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="640" y="226" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif" font-size="58" letter-spacing="5"><tspan fill="#F4E9CE">Arcanea </tspan><tspan fill="#F59E0B">Labs</tspan></text>
+
+  <!-- positioning line with flanking ornaments -->
+  <text x="640" y="264" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="19" fill="#A5E4EC">Worldbuilding, hand-considered and kept true.</text>
+  <g stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1">
+    <line x1="356" y1="258" x2="394" y2="258"/>
+    <line x1="886" y1="258" x2="924" y2="258"/>
+  </g>
+  <g fill="#F59E0B" opacity="0.9">
+    <path d="M410,254.5 L413.5,258 L410,261.5 L406.5,258 Z"/>
+    <path d="M870,254.5 L873.5,258 L870,261.5 L866.5,258 Z"/>
+  </g>
+</svg>
